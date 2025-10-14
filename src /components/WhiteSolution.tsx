@@ -61,32 +61,8 @@ const WhiteSolution = () => {
   };
 
   return (
-    <section className="w-full bg-gradient-to-br from-gray-50 via-gray-50 to-blue-50/30 flex flex-col items-center justify-center py-16 lg:py-20 px-4 sm:px-6 text-center relative overflow-hidden">
+    <section className="w-full  flex flex-col items-center justify-center py-16 lg:py-20 px-4 sm:px-6 text-center relative overflow-hidden">
       {/* Background decorative elements */}
-      <motion.div
-        className="absolute top-20 right-10 w-24 h-24 bg-indigo-200/20 rounded-full blur-2xl"
-        animate={{
-          scale: [1, 1.3, 1],
-          opacity: [0.3, 0.6, 0.3],
-        }}
-        transition={{
-          duration: 6,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
-      <motion.div
-        className="absolute bottom-20 left-10 w-32 h-32 bg-purple-200/20 rounded-full blur-2xl"
-        animate={{
-          scale: [1.2, 1, 1.2],
-          opacity: [0.4, 0.2, 0.4],
-        }}
-        transition={{
-          duration: 8,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
 
       <motion.div
         className="max-w-7xl mx-auto relative z-10"
@@ -98,7 +74,7 @@ const WhiteSolution = () => {
         {/* Header Section */}
         <motion.div className="mb-16" variants={itemVariants}>
           <motion.p 
-            className="text-indigo-600 font-semibold uppercase tracking-wide mb-4 text-sm md:text-base"
+            className="text-[#5c3d2e] font-semibold uppercase tracking-wide mb-4 text-sm md:text-base"
             variants={itemVariants}
           >
             Achieve a Brighter, Whiter Smile
@@ -136,27 +112,13 @@ const WhiteSolution = () => {
               }}
             >
               {/* Background gradient on hover */}
-              <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 to-purple-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#f5f0e1] to-[#ede4d3] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               
               <div className="relative z-10">
-                {/* Icon */}
-                <motion.div
-                  className="mb-6"
-                  whileHover={{ 
-                    scale: 1.1,
-                    rotate: 5,
-                    transition: { duration: 0.3 }
-                  }}
-                >
-                  <img
-                    src={item.icon}
-                    alt={item.title}
-                    className="w-16 h-16 md:w-20 md:h-20 mx-auto"
-                  />
-                </motion.div>
+
 
                 {/* Title */}
-                <h3 className="text-lg md:text-xl font-bold text-indigo-600 mb-4 group-hover:text-indigo-700 transition-colors duration-300">
+                <h3 className="text-lg md:text-xl font-bold text-[#5c3d2e] mb-4 group-hover:text-[#362212] transition-colors duration-300">
                   {item.title}
                 </h3>
 
@@ -166,13 +128,7 @@ const WhiteSolution = () => {
                 </p>
               </div>
 
-              {/* Decorative corner element */}
-              <motion.div
-                className="absolute top-4 right-4 w-2 h-2 bg-indigo-400 rounded-full opacity-20 group-hover:opacity-60"
-                initial={{ scale: 0 }}
-                whileInView={{ scale: 1 }}
-                transition={{ delay: 0.3 + index * 0.1, duration: 0.3 }}
-              />
+
             </motion.div>
           ))}
         </motion.div>
@@ -181,10 +137,10 @@ const WhiteSolution = () => {
         <motion.div variants={itemVariants}>
           <motion.a
             href="/contact-us"
-            className="inline-flex items-center gap-3 px-10 py-5 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 shadow-xl hover:shadow-2xl text-base md:text-lg"
+            className="inline-flex items-center gap-3 px-10 py-5 rounded-full bg-gradient-to-r from-[#5c3d2e] to-[#a67c52] text-white font-semibold hover:from-[#704b36] hover:to-[#c19a6b] transition-all duration-300 shadow-xl hover:shadow-2xl text-base md:text-lg"
             whileHover={{ 
               scale: 1.05,
-              boxShadow: '0 20px 40px rgba(99, 102, 241, 0.3)'
+              boxShadow: '0 20px 40px rgba(92, 61, 46, 0.3)'
             }}
             whileTap={{ scale: 0.95 }}
           >
@@ -203,32 +159,7 @@ const WhiteSolution = () => {
         </motion.div>
       </motion.div>
 
-      {/* Floating elements */}
-      <motion.div
-        className="absolute top-32 left-20 w-3 h-3 bg-indigo-400 rounded-full opacity-60"
-        animate={{
-          y: [0, -15, 0],
-          opacity: [0.6, 1, 0.6],
-        }}
-        transition={{
-          duration: 3,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
-      <motion.div
-        className="absolute bottom-40 right-32 w-2 h-2 bg-purple-400 rounded-full opacity-50"
-        animate={{
-          y: [0, -10, 0],
-          opacity: [0.5, 0.8, 0.5],
-        }}
-        transition={{
-          duration: 4,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 1
-        }}
-      />
+
     </section>
   );
 };

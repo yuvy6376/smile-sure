@@ -86,7 +86,7 @@ const HeroBottom = () => {
       >
         <section
           aria-labelledby="services-title"
-          className="w-full rounded-3xl bg-indigo-50/40 m-6 sm:p-8 md:p-10 "
+          className="w-full rounded-3xl bg-[#faf8ec]/60 m-6 sm:p-8 md:p-10 "
         >
           <div className="flex flex-row gap-2 lg:gap-10 h-full">
             {/* Top: headline + pills */}
@@ -118,10 +118,10 @@ const HeroBottom = () => {
                     >
                       <motion.a
                         // href={s.href}
-                        className="inline-flex items-center rounded-full border px-4 py-2 text-sm font-medium transition-all duration-200 border-indigo-300 text-indigo-700 hover:border-indigo-400 hover:bg-indigo-100 cursor-pointer"
+                        className="inline-flex items-center rounded-full border px-4 py-2 text-sm font-medium transition-all duration-200 border-[#a67c52] text-[#5c3d2e] hover:border-[#8b6f47] hover:bg-[#f5f0e1] cursor-pointer"
                         whileHover={{
-                          backgroundColor: 'rgb(224 231 255)',
-                          borderColor: 'rgb(129 140 248)',
+                          backgroundColor: 'rgb(245, 240, 225)',
+                          borderColor: 'rgb(139, 111, 71)',
                         }}
                       >
                         {s.label}
@@ -234,7 +234,7 @@ const HeroBottom = () => {
                 {title}
               </motion.h3>
               <motion.div 
-                className="w-12 h-1 bg-indigo-400 rounded-full mt-2"
+                className="w-12 h-1 bg-[#a67c52] rounded-full mt-2"
                 initial={{ width: 0 }}
                 whileInView={{ width: 48 }}
                 transition={{ delay: 0.5, duration: 0.6 }}
@@ -254,7 +254,7 @@ const HeroBottom = () => {
               
               {/* Call to action */}
               <motion.div
-                className="flex items-center gap-2 text-indigo-300 font-semibold"
+                className="flex items-center gap-2 text-[#c19a6b] font-semibold"
                 whileHover={{ x: 4 }}
                 transition={{ duration: 0.2 }}
               >
@@ -332,7 +332,7 @@ const HeroBottom = () => {
 
           {/* Subtle corner accent */}
           <motion.div
-            className="absolute top-6 right-6 w-2 h-2 bg-indigo-400 rounded-full opacity-60"
+            className="absolute top-6 right-6 w-2 h-2 bg-[#a67c52] rounded-full opacity-60"
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
             transition={{ delay: 0.8, duration: 0.3 }}

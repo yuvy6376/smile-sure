@@ -60,32 +60,8 @@ const BookVisit2 = () => {
   };
 
   return (
-    <section className="bg-gradient-to-br from-[#f6f7ff] via-[#f6f7ff] to-indigo-50/50 py-16 lg:py-20 px-4 sm:px-6 relative overflow-hidden">
-      {/* Background decorative elements */}
-      <motion.div
-        className="absolute top-20 right-10 w-40 h-40 bg-indigo-200/20 rounded-full blur-3xl"
-        animate={{
-          scale: [1, 1.3, 1],
-          opacity: [0.3, 0.6, 0.3],
-        }}
-        transition={{
-          duration: 8,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
-      <motion.div
-        className="absolute bottom-20 left-10 w-32 h-32 bg-purple-200/20 rounded-full blur-2xl"
-        animate={{
-          scale: [1.2, 1, 1.2],
-          opacity: [0.4, 0.2, 0.4],
-        }}
-        transition={{
-          duration: 6,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
+    <section className="py-16 lg:py-20 px-4 sm:px-6 relative overflow-hidden">
+
 
       <motion.div 
         className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-center relative z-10"
@@ -97,7 +73,7 @@ const BookVisit2 = () => {
         {/* Left Column - Features */}
         <motion.div className="order-2 lg:order-1" variants={itemVariants}>
           <motion.p 
-            className="text-indigo-600 font-semibold uppercase mb-8 text-sm md:text-base tracking-wider"
+            className="text-[#362212] font-semibold uppercase mb-8 text-sm md:text-base tracking-wider"
             variants={itemVariants}
           >
             Book a Visit
@@ -110,24 +86,14 @@ const BookVisit2 = () => {
             {features.map((item, i) => (
               <motion.button
                 key={i}
-                className="px-6 py-4 border-2 border-indigo-600 rounded-full text-indigo-600 text-sm md:text-base font-semibold hover:bg-indigo-50 hover:border-indigo-700 hover:text-indigo-700 transition-all duration-300 text-left group relative overflow-hidden"
+                className="px-6 py-4 border-2 border-[#362212] rounded-full text-[#362212] text-sm md:text-base font-semibold hover:bg-indigo-50 hover:border-indigo-700 hover:text-indigo-700 transition-all duration-300 text-left group relative overflow-hidden"
                 variants={featureVariants}
-                whileHover={{ 
-                  scale: 1.02,
-                  x: 5,
-                  transition: { duration: 0.2 }
-                }}
-                whileTap={{ scale: 0.98 }}
+
               >
                 {/* Background animation on hover */}
                 <div className="absolute inset-0 bg-gradient-to-r from-indigo-50 to-purple-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 
-                {/* Icon */}
-                <motion.div
-                  className="absolute left-4 top-1/2 transform -translate-y-1/2 w-2 h-2 bg-indigo-600 rounded-full opacity-0 group-hover:opacity-100"
-                  whileHover={{ scale: 1.5 }}
-                />
-                
+
                 <span className="relative z-10 group-hover:translate-x-4 transition-transform duration-300">
                   {item}
                 </span>
@@ -176,7 +142,7 @@ const BookVisit2 = () => {
                 ease: "easeInOut"
               }}
             >
-              <svg className="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-6 h-6 text-[#362212]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </motion.div>
@@ -185,18 +151,7 @@ const BookVisit2 = () => {
 
         {/* Right Column - Content */}
         <motion.div className="order-3" variants={itemVariants}>
-          {/* Icon */}
-          <motion.div
-            className="mb-6"
-            whileHover={{ scale: 1.1, rotate: 5 }}
-            transition={{ duration: 0.3 }}
-          >
-            <img
-              src="https://framerusercontent.com/images/91516UD7bQ6A5Eb1kKCG1bFNhbA.svg"
-              alt="Call Icon"
-              className="w-12 h-12 md:w-16 md:h-16"
-            />
-          </motion.div>
+
 
           <motion.h2 
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight"
@@ -214,7 +169,7 @@ const BookVisit2 = () => {
           </motion.p>
 
           <motion.button 
-            className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 md:px-10 md:py-5 rounded-full font-semibold hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 shadow-xl hover:shadow-2xl text-base md:text-lg group"
+className="bg-gradient-to-r from-[#5c3d2e] to-[#a67c52] text-white px-8 py-4 md:px-10 md:py-5 rounded-full font-semibold hover:from-[#704b36] hover:to-[#c19a6b] transition-all duration-300 shadow-xl hover:shadow-2xl text-base md:text-lg group"
             variants={itemVariants}
             whileHover={{ 
               scale: 1.05,
@@ -239,32 +194,7 @@ const BookVisit2 = () => {
         </motion.div>
       </motion.div>
 
-      {/* Floating elements */}
-      <motion.div
-        className="absolute top-32 left-20 w-3 h-3 bg-indigo-400 rounded-full opacity-60"
-        animate={{
-          y: [0, -15, 0],
-          opacity: [0.6, 1, 0.6],
-        }}
-        transition={{
-          duration: 3,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
-      <motion.div
-        className="absolute bottom-40 right-32 w-2 h-2 bg-purple-400 rounded-full opacity-50"
-        animate={{
-          y: [0, -10, 0],
-          opacity: [0.5, 0.8, 0.5],
-        }}
-        transition={{
-          duration: 4,
-          repeat: Infinity,
-          ease: "easeInOut",
-          delay: 1
-        }}
-      />
+
     </section>
   );
 };

@@ -54,10 +54,10 @@ const BookVisit = () => {
   };
 
   return (
-    <section className="flex flex-col items-center justify-center px-4 sm:px-6 py-16 lg:py-20 bg-gray-50 relative overflow-hidden">
+    <section className="flex flex-col items-center justify-center px-4 sm:px-6 py-16 lg:py-20 relative overflow-hidden">
       {/* Background decorative elements */}
       <motion.div
-        className="absolute top-10 left-10 w-20 h-20 bg-[#4041D1]/10 rounded-full blur-xl"
+        className="absolute top-10 left-10 w-20 h-20 bg-[#a67c52]/10 rounded-full blur-xl"
         animate={{
           scale: [1, 1.2, 1],
           opacity: [0.3, 0.6, 0.3],
@@ -69,7 +69,7 @@ const BookVisit = () => {
         }}
       />
       <motion.div
-        className="absolute bottom-10 right-10 w-32 h-32 bg-purple-400/10 rounded-full blur-xl"
+        className="absolute bottom-10 right-10 w-32 h-32 bg-[#8b6f47]/10 rounded-full blur-xl"
         animate={{
           scale: [1.2, 1, 1.2],
           opacity: [0.4, 0.2, 0.4],
@@ -83,7 +83,7 @@ const BookVisit = () => {
 
       {/* Top Section */}
       <motion.div 
-        className="relative w-full max-w-6xl bg-gradient-to-br from-[#4041D1] via-[#4041D1] to-[#6366f1] rounded-3xl px-6 sm:px-8 md:px-16 py-12 md:py-16 text-center shadow-2xl"
+        className="relative w-full max-w-6xl bg-gradient-to-br from-[#5c3d2e] via-[#704b36] to-[#a67c52] rounded-3xl px-6 sm:px-8 md:px-16 py-12 md:py-16 text-center shadow-2xl"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -168,7 +168,7 @@ const BookVisit = () => {
             <motion.input
               type="text"
               placeholder="FULL NAME*"
-              className="flex-1 px-4 py-3 md:py-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#4041D1] focus:border-transparent transition-all duration-300 text-sm md:text-base placeholder-gray-500"
+              className="flex-1 px-4 py-3 md:py-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#a67c52] focus:border-transparent transition-all duration-300 text-sm md:text-base placeholder-gray-500"
               variants={inputVariants}
               whileFocus={{ scale: 1.02 }}
               required
@@ -176,7 +176,7 @@ const BookVisit = () => {
             <motion.input
               type="email"
               placeholder="EMAIL*"
-              className="flex-1 px-4 py-3 md:py-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#4041D1] focus:border-transparent transition-all duration-300 text-sm md:text-base placeholder-gray-500"
+              className="flex-1 px-4 py-3 md:py-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#a67c52] focus:border-transparent transition-all duration-300 text-sm md:text-base placeholder-gray-500"
               variants={inputVariants}
               whileFocus={{ scale: 1.02 }}
               required
@@ -184,25 +184,25 @@ const BookVisit = () => {
             <motion.input
               type="tel"
               placeholder="PHONE NUMBER*"
-              className="flex-1 px-4 py-3 md:py-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#4041D1] focus:border-transparent transition-all duration-300 text-sm md:text-base placeholder-gray-500"
+              className="flex-1 px-4 py-3 md:py-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#a67c52] focus:border-transparent transition-all duration-300 text-sm md:text-base placeholder-gray-500"
               variants={inputVariants}
               whileFocus={{ scale: 1.02 }}
               required
             />
             <motion.input
               type="date"
-              className="flex-1 px-4 py-3 md:py-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#4041D1] focus:border-transparent transition-all duration-300 text-sm md:text-base"
+              className="flex-1 px-4 py-3 md:py-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#a67c52] focus:border-transparent transition-all duration-300 text-sm md:text-base"
               variants={inputVariants}
               whileFocus={{ scale: 1.02 }}
               required
             />
             <motion.button
               type="submit"
-              className="flex items-center justify-center px-6 py-3 md:py-4 rounded-xl bg-gradient-to-r from-[#4041D1] to-[#6366f1] hover:from-[#2f30a8] hover:to-[#4f46e5] transition-all duration-300 text-white font-semibold shadow-lg hover:shadow-xl lg:w-auto w-full"
+              className="flex items-center justify-center px-6 py-3 md:py-4 rounded-xl bg-gradient-to-r from-[#5c3d2e] to-[#a67c52] hover:from-[#704b36] hover:to-[#c19a6b] transition-all duration-300 text-white font-semibold shadow-lg hover:shadow-xl lg:w-auto w-full"
               variants={inputVariants}
               whileHover={{ 
                 scale: 1.05,
-                boxShadow: '0 10px 30px rgba(64, 65, 209, 0.4)'
+                boxShadow: '0 10px 30px rgba(92, 61, 46, 0.4)'
               }}
               whileTap={{ scale: 0.95 }}
             >

@@ -64,10 +64,10 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="py-16 lg:py-20 px-4 sm:px-6 flex flex-col items-center bg-gradient-to-br from-white via-gray-50 to-indigo-50/30 relative overflow-hidden">
+    <section className="py-16 lg:py-20 px-4 sm:px-6 flex flex-col items-center relative overflow-hidden">
       {/* Background decorative elements */}
       <motion.div
-        className="absolute top-10 right-10 w-32 h-32 bg-indigo-200/20 rounded-full blur-3xl"
+        className="absolute top-10 right-10 w-32 h-32 bg-[#a67c52]/10 rounded-full blur-3xl"
         animate={{
           scale: [1, 1.2, 1],
           opacity: [0.3, 0.5, 0.3],
@@ -78,18 +78,7 @@ const Testimonials = () => {
           ease: "easeInOut"
         }}
       />
-      <motion.div
-        className="absolute bottom-10 left-10 w-24 h-24 bg-purple-200/20 rounded-full blur-2xl"
-        animate={{
-          scale: [1.2, 1, 1.2],
-          opacity: [0.4, 0.2, 0.4],
-        }}
-        transition={{
-          duration: 6,
-          repeat: Infinity,
-          ease: "easeInOut"
-        }}
-      />
+
 
       <motion.div
         className="max-w-7xl mx-auto relative z-10"
@@ -101,13 +90,13 @@ const Testimonials = () => {
         {/* Heading */}
         <motion.div className="text-center mb-16" variants={itemVariants}>
           <motion.p 
-            className="text-indigo-600 font-semibold uppercase tracking-wide mb-4 text-sm md:text-base"
+            className="text-[#362212] font-semibold uppercase tracking-wide mb-4 text-sm md:text-base"
             variants={itemVariants}
           >
             Testimonials
           </motion.p>
           <motion.h2 
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#362212] leading-tight"
             variants={itemVariants}
           >
             What our patients say.
@@ -122,7 +111,7 @@ const Testimonials = () => {
           {testimonials.map((t, idx) => (
             <motion.div
               key={idx}
-              className="bg-gradient-to-br from-[#f6f7ff] to-white rounded-3xl p-6 md:p-8 flex flex-col justify-between shadow-lg hover:shadow-2xl transition-all duration-300 border border-indigo-100 group relative overflow-hidden"
+              className="bg-gradient-to-br from-[#faf8ec] to-[#faf8ec] rounded-3xl p-6 md:p-8 flex flex-col justify-between shadow-lg hover:shadow-2xl transition-all duration-300 border border-[#362212] group relative overflow-hidden"
               variants={cardVariants}
               whileHover={{ 
                 y: -8,
@@ -130,7 +119,7 @@ const Testimonials = () => {
               }}
             >
               {/* Background gradient on hover */}
-              <div className="absolute inset-0 bg-gradient-to-br from-indigo-50/50 to-purple-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#f5f0e1] to-[#ede4d3] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               
               <div className="relative z-10">
                 {/* Quote Icon */}
@@ -140,7 +129,7 @@ const Testimonials = () => {
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 0.2 + idx * 0.1, duration: 0.4 }}
                 >
-                  <svg className="w-8 h-8 text-indigo-400" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-8 h-8 text-[#362212]" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
                   </svg>
                 </motion.div>
@@ -148,7 +137,7 @@ const Testimonials = () => {
                 {/* Title + Body */}
                 <div className="mb-6">
                   <motion.h4 
-                    className="text-lg md:text-xl font-bold text-gray-900 mb-4 group-hover:text-indigo-700 transition-colors duration-300"
+                    className="text-lg md:text-xl font-bold text-[#362212] mb-4 group-hover:text-[#5c3d2e] transition-colors duration-300"
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.3 + idx * 0.1, duration: 0.5 }}
@@ -186,7 +175,7 @@ const Testimonials = () => {
                   </motion.div>
                   <div className="ml-4 flex-1">
                     <p className="font-bold text-gray-900 text-sm md:text-base">{t.name}</p>
-                    <p className="text-indigo-600 text-xs md:text-sm font-medium">{t.role}</p>
+                    <p className="text-[#362212] text-xs md:text-sm font-medium">{t.role}</p>
                   </div>
                   
                   {/* Star Rating */}
@@ -210,7 +199,7 @@ const Testimonials = () => {
 
               {/* Decorative corner element */}
               <motion.div
-                className="absolute top-4 right-4 w-2 h-2 bg-indigo-400 rounded-full opacity-20 group-hover:opacity-60"
+                className="absolute top-4 right-4 w-2 h-2 bg-[#a67c52] rounded-full opacity-20 group-hover:opacity-60"
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
                 transition={{ delay: 0.3 + idx * 0.1, duration: 0.3 }}
@@ -222,7 +211,7 @@ const Testimonials = () => {
 
       {/* Floating elements */}
       <motion.div
-        className="absolute top-40 left-16 w-3 h-3 bg-indigo-400 rounded-full opacity-60"
+        className="absolute top-40 left-16 w-3 h-3 bg-[#a67c52] rounded-full opacity-60"
         animate={{
           y: [0, -15, 0],
           opacity: [0.6, 1, 0.6],
@@ -234,7 +223,7 @@ const Testimonials = () => {
         }}
       />
       <motion.div
-        className="absolute bottom-32 right-20 w-2 h-2 bg-purple-400 rounded-full opacity-50"
+        className="absolute bottom-32 right-20 w-2 h-2 bg-[#8b6f47] rounded-full opacity-50"
         animate={{
           y: [0, -10, 0],
           opacity: [0.5, 0.8, 0.5],

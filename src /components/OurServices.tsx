@@ -111,7 +111,7 @@ const cardVariants = {
 const OurServices = () => {
   return (
     <motion.section 
-      className="px-6 md:px-16 lg:px-24 py-16 bg-[#F9FAFB]"
+      className="px-6 md:px-16 lg:px-24 py-16"
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
@@ -124,7 +124,7 @@ const OurServices = () => {
       >
         <div className="space-y-4">
           <motion.p 
-            className="text-sm font-semibold text-[#4041D1] uppercase tracking-wide"
+            className="text-sm font-semibold text-[#5c3d2e] uppercase tracking-wide"
             variants={itemVariants}
           >
             Our Services
@@ -144,7 +144,7 @@ const OurServices = () => {
         </div>
         <motion.a
           href="/services"
-          className="mt-8 md:mt-0 inline-flex items-center gap-2 bg-[#4041D1] hover:bg-[#2f30a8] text-white px-8 py-4 rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl group"
+          className="mt-8 md:mt-0 inline-flex items-center gap-2 bg-gradient-to-r from-[#5c3d2e] to-[#a67c52] hover:from-[#704b36] hover:to-[#c19a6b] text-white px-8 py-4 rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl group"
           variants={itemVariants}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
@@ -171,7 +171,7 @@ const OurServices = () => {
         {services.map((service, index) => (
           <motion.div
             key={index}
-            className="group bg-white rounded-3xl shadow-lg hover:shadow-2xl p-8 flex flex-col justify-between transition-all duration-300 border border-gray-100 hover:border-[#4041D1]/20 relative overflow-hidden"
+            className="group bg-white rounded-3xl shadow-lg hover:shadow-2xl p-8 flex flex-col justify-between transition-all duration-300 border border-gray-100 hover:border-[#a67c52]/20 relative overflow-hidden"
             variants={cardVariants}
             whileHover={{ 
               y: -8,
@@ -182,21 +182,10 @@ const OurServices = () => {
             <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-5 transition-opacity duration-300`} />
             
             <div className="relative z-10">
-              {/* Icon */}
-              <motion.div 
-                className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br ${service.color} text-white mb-6 shadow-lg`}
-                whileHover={{ 
-                  scale: 1.1,
-                  rotate: 5,
-                  transition: { duration: 0.2 }
-                }}
-              >
-                {service.icon}
-              </motion.div>
-              
+
               {/* Content */}
               <div className="space-y-4">
-                <h3 className="text-xl font-bold text-[#11081C] group-hover:text-[#4041D1] transition-colors duration-300">
+                <h3 className="text-xl font-bold text-[#11081C] group-hover:text-[#5c3d2e] transition-colors duration-300">
                   {service.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -208,7 +197,7 @@ const OurServices = () => {
             {/* CTA Link */}
             <motion.a
               href={service.link}
-              className="relative z-10 mt-8 inline-flex items-center gap-2 text-[#4041D1] font-semibold group-hover:gap-3 transition-all duration-300"
+              className="relative z-10 mt-8 inline-flex items-center gap-2 text-[#5c3d2e] font-semibold group-hover:gap-3 transition-all duration-300"
               whileHover={{ x: 4 }}
             >
               Learn More
@@ -226,7 +215,7 @@ const OurServices = () => {
 
             {/* Decorative corner element */}
             <motion.div
-              className="absolute top-4 right-4 w-2 h-2 bg-[#4041D1] rounded-full opacity-20 group-hover:opacity-60"
+              className="absolute top-4 right-4 w-2 h-2 bg-[#a67c52] rounded-full opacity-20 group-hover:opacity-60"
               initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
               transition={{ delay: 0.3 + index * 0.1, duration: 0.3 }}
@@ -259,7 +248,7 @@ const OurServices = () => {
           </motion.p>
           <motion.a
             href="/book-appointment"
-            className="inline-flex items-center gap-2 bg-[#4041D1] hover:bg-[#2f30a8] text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-[#5c3d2e] to-[#a67c52] hover:from-[#704b36] hover:to-[#c19a6b] text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >

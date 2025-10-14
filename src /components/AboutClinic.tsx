@@ -52,7 +52,7 @@ const AboutClinic = () => {
   };
 
   return (
-    <section className="flex flex-col lg:flex-row w-full bg-[#F9FAFB] min-h-screen lg:min-h-[600px]">
+    <section className="flex flex-col lg:flex-row w-full  min-h-screen lg:min-h-[600px]">
       {/* Left Content */}
       <motion.div 
         className="flex flex-col justify-center px-6 sm:px-8 md:px-12 lg:px-16 xl:px-24 w-full lg:w-1/2 py-12 lg:py-16 space-y-6 lg:space-y-8"
@@ -63,7 +63,7 @@ const AboutClinic = () => {
       >
         {/* Section Label */}
         <motion.p 
-          className="text-sm font-semibold text-[#4041D1] uppercase tracking-wide"
+          className="text-sm font-semibold text-[#5c3d2e] uppercase tracking-wide"
           variants={itemVariants}
         >
           About Clinic
@@ -98,19 +98,9 @@ const AboutClinic = () => {
             whileHover={{ x: 5 }}
             transition={{ duration: 0.2 }}
           >
-            <motion.div
-              className="flex-shrink-0"
-              whileHover={{ scale: 1.1, rotate: 5 }}
-              transition={{ duration: 0.3 }}
-            >
-              <img
-                src="https://framerusercontent.com/images/aJApq07b2tRU9SdYq7jc5ldecI.svg"
-                alt="Care Icon"
-                className="w-10 h-10 lg:w-12 lg:h-12"
-              />
-            </motion.div>
+          
             <div className="flex-1">
-              <h3 className="text-lg lg:text-xl font-semibold text-[#4041D1] mb-2 group-hover:text-[#2f30a8] transition-colors duration-300">
+              <h3 className="text-lg lg:text-xl font-semibold text-[#5c3d2e] mb-2 group-hover:text-[#362212] transition-colors duration-300">
                 Patient-Centered Care
               </h3>
               <p className="text-gray-600 leading-relaxed text-sm md:text-base">
@@ -127,19 +117,9 @@ const AboutClinic = () => {
             whileHover={{ x: 5 }}
             transition={{ duration: 0.2 }}
           >
-            <motion.div
-              className="flex-shrink-0"
-              whileHover={{ scale: 1.1, rotate: -5 }}
-              transition={{ duration: 0.3 }}
-            >
-              <img
-                src="https://framerusercontent.com/images/Uad0icXI22m7urNiziHHdiV22ow.svg"
-                alt="Tooth Icon"
-                className="w-10 h-10 lg:w-12 lg:h-12"
-              />
-            </motion.div>
+
             <div className="flex-1">
-              <h3 className="text-lg lg:text-xl font-semibold text-[#4041D1] mb-2 group-hover:text-[#2f30a8] transition-colors duration-300">
+              <h3 className="text-lg lg:text-xl font-semibold text-[#5c3d2e] mb-2 group-hover:text-[#362212] transition-colors duration-300">
                 Advanced Treatments
               </h3>
               <p className="text-gray-600 leading-relaxed text-sm md:text-base">
@@ -156,10 +136,10 @@ const AboutClinic = () => {
         >
           <motion.a
             href="/about-us"
-            className="inline-flex items-center gap-2 mt-6 px-8 py-4 bg-[#4041D1] hover:bg-[#2f30a8] text-white font-semibold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+            className="inline-flex items-center gap-2 mt-6 px-8 py-4 bg-gradient-to-r from-[#5c3d2e] to-[#a67c52] hover:from-[#704b36] hover:to-[#c19a6b] text-white font-semibold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
             whileHover={{ 
               scale: 1.05,
-              boxShadow: '0 10px 30px rgba(64, 65, 209, 0.3)'
+              boxShadow: '0 10px 30px rgba(92, 61, 46, 0.3)'
             }}
             whileTap={{ scale: 0.95 }}
           >

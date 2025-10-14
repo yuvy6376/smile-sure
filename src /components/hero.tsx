@@ -95,7 +95,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent"
+            className="bg-gradient-to-r from-[#a67c52] to-[#c19a6b] bg-clip-text text-transparent"
           >
             dental care.
           </motion.span>
@@ -121,10 +121,10 @@ const Hero = () => {
             variants={buttonVariants}
           >
             <motion.button 
-              className="text-black px-8 md:px-10 lg:px-[40px] py-4 md:py-5 lg:py-[24px] rounded-full bg-white hover:bg-blue-600 hover:text-white transition-all duration-300 uppercase text-sm md:text-base font-semibold shadow-2xl hover:shadow-blue-500/25"
+              className="text-black px-8 md:px-10 lg:px-[40px] py-4 md:py-5 lg:py-[24px] rounded-full bg-white hover:bg-[#5c3d2e] hover:text-white transition-all duration-300 uppercase text-sm md:text-base font-semibold shadow-2xl hover:shadow-[#5c3d2e]/25"
               whileHover={{ 
                 scale: 1.05,
-                boxShadow: '0 20px 40px rgba(59, 130, 246, 0.3)'
+                boxShadow: '0 20px 40px rgba(92, 61, 46, 0.3)'
               }}
               whileTap={{ scale: 0.95 }}
             >
@@ -136,7 +136,7 @@ const Hero = () => {
 
       {/* Floating Elements */}
       <motion.div
-        className="absolute top-20 right-10 w-4 h-4 bg-blue-400 rounded-full opacity-60"
+        className="absolute top-20 right-10 w-4 h-4 bg-[#a67c52] rounded-full opacity-60"
         animate={{
           y: [0, -20, 0],
           opacity: [0.6, 1, 0.6],
@@ -148,7 +148,7 @@ const Hero = () => {
         }}
       />
       <motion.div
-        className="absolute bottom-32 left-10 w-3 h-3 bg-purple-400 rounded-full opacity-50"
+        className="absolute bottom-32 left-10 w-3 h-3 bg-[#8b6f47] rounded-full opacity-50"
         animate={{
           y: [0, -15, 0],
           opacity: [0.5, 0.8, 0.5],
